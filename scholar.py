@@ -166,6 +166,7 @@ import os
 import re
 import sys
 import warnings
+import time
 
 try:
     # Try importing for Python 3
@@ -889,7 +890,7 @@ class ScholarSettings(object):
 
     def __init__(self):
         self.citform = 0 # Citation format, default none
-        self.per_page_results = None
+        self.per_page_results = 10
         self._is_configured = False
 
     def set_citation_format(self, citform):
@@ -903,8 +904,7 @@ class ScholarSettings(object):
     def set_per_page_results(self, per_page_results):
         self.per_page_results = ScholarUtils.ensure_int(
             per_page_results, 'page results must be integer')
-        self.per_page_results = min(
-            self.per_page_results, ScholarConf.MAX_PAGE_RESULTS)
+        self.per_page_results = min(self.per_page_results, ScholarConf.MAX_PAGE_RESULTS)
         self._is_configured = True
 
     def is_configured(self):
@@ -1046,9 +1046,10 @@ class ScholarQuerier(object):
         """
         self.send_query(query)
 
-        if self.articles[0]['url_citations'] is None:
+        if len(self.articles)==0 or self.articles[0]['url_citations'] is None:
             return 
         citations_url=self.articles[0]['url_citations']
+        citations_num=self.articles[0]['num_citations']
         self.clear_articles()
 
         html = self._get_http_response(url=citations_url,
@@ -1058,6 +1059,15 @@ class ScholarQuerier(object):
             return
 
         self.parse(html)
+
+        #while len(self.articles)<citations_num:
+            # this is a workaround to fetch all the citations, ought to be better integrated at some point
+         #   time.sleep(1)
+          #  html = self._get_http_response(url=citations_url+'&start='+str(len(self.articles)), log_msg='dump of query response HTML', err_msg='results retrieval failed')
+           # if html is None:
+            #    return
+
+            #self.parse(html)
 
     def get_citation_data(self, article):
         """

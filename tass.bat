@@ -12,4 +12,6 @@
 
 scholar.py --citations-only -c 1 --author "albert einstein" --phrase "quantum theory"
 
+::scholar.py -c 1 --phrase "The quantum theory of fields" --citation bt
+
 pause

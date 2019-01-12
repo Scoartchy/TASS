@@ -166,6 +166,7 @@ import os
 import re
 import sys
 import warnings
+import re
 
 try:
     # Try importing for Python 3
@@ -1161,9 +1162,19 @@ def txt(querier, with_globals):
         if len(items) > 0:
             print
 
+
+    #Saving and printing title of articles which cites first input article
+    file = open('scrapingResults.txt', 'a')
     articles = querier.articles
     for art in articles:
-        print(encode(art.as_txt()) + '\n')
+        #print(encode(art.as_txt()), '\n')           
+        patternTitle = r"Title (.*?)\n"
+        result = re.findall(patternTitle, encode(art.as_txt()), flags=0)
+        #print(result[0], '\n')
+        file.write(result[0])
+        file.write('\n')
+
+    file.close()
 
 def csv(querier, header=False, sep='|'):
     articles = querier.articles
@@ -1268,7 +1279,7 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
         return 0
 
     if options.cookie_file:
-        ScholarConf.COOKIE_JAR_FILE = options.cookie_file
+        ScholarConf.COOKIE_JAR_FILE = "C:\\Users\\Jakub\\Downloads\\cookies(1).json"
 
     # Sanity-check the options: if they include a cluster ID query, it
     # makes no sense to have search arguments:

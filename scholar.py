@@ -1164,7 +1164,7 @@ def txt(querier, with_globals):
 
 
     #Saving and printing title of articles which cites first input article
-    file = open('scrapingResults.txt', 'a')
+    file = open('scrappedTitles.txt', 'a')
     articles = querier.articles
     for art in articles:
         #print(encode(art.as_txt()), '\n')           
@@ -1184,10 +1184,17 @@ def csv(querier, header=False, sep='|'):
         header = False
 
 def citation_export(querier):
+    #Saving and printing authors of articles which cites first input article
+    file = open('scrappedAuthors.txt', 'a')
     articles = querier.articles
     for art in articles:
         print(str(art.as_citation()))
+        patternAuthor = r"author={(.*?)}"
+        result = re.findall(patternAuthor, str(art.as_citation()), flags=0) #authors, need change to regex
+        print(result)
+        file.write(result[0])
 
+    file.close()
 
 def main():
     usage = """scholar.py [options] <query string>
@@ -1279,7 +1286,7 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
         return 0
 
     if options.cookie_file:
-        ScholarConf.COOKIE_JAR_FILE = "C:\\Users\\Jakub\\Downloads\\cookies(1).json"
+        ScholarConf.COOKIE_JAR_FILE = options.cookie_file
 
     # Sanity-check the options: if they include a cluster ID query, it
     # makes no sense to have search arguments:

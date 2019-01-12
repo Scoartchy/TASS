@@ -2,7 +2,11 @@ import os
 import time
 import random
 
-f = open('scrapingResults.txt', 'r+')
+f = open('scrappedTitles.txt', 'r+')
+f.truncate(0)
+f.close()
+
+f = open('scrappedAuthors.txt', 'r+')
 f.truncate(0)
 f.close()
 
@@ -15,14 +19,14 @@ time.sleep(1 + random.uniform(5, 10))
 print("Scrapped articles:")
 
 i = 1
-with open('scrapingResults.txt', 'r') as f:
+with open('scrappedTitles.txt', 'r') as f:
     for line in f:
         commandLine = ('scholar.py -c 1 --phrase ' + line.rstrip() + ' --citation bt')
         print(commandLine, '\n')
         os.system(commandLine)
         time.sleep(1 + random.uniform(5, 10)) 
         ++i
-        if i >= 5:
+        if i >= 1:
         	break
 
 

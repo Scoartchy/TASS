@@ -1,20 +1,24 @@
 import os
 import time
 import random
+import networkx as nx
 
-f = open('scrappedTitles.txt', 'r+')
-f.truncate(0)
-f.close()
+scientistsGraph = nx.MultiDiGraph()
 
-f = open('scrappedAuthors.txt', 'r+')
-f.truncate(0)
-f.close()
+#f = open('scrappedTitles.txt', 'r+')
+#f.truncate(0)
+#f.close()
+
+#f = open('scrappedAuthors.txt', 'r+')
+#f.truncate(0)
+#f.close()
 
 print("Scrapping...")
 
-os.system('python scholar.py --citations-only -c 1 --author "cezary zielinski"')
+os.system('python scholar.py --citations-only -c 1 --author "cezary zielinski"') # change to list of authors
+scientistsGraph.add_node("cezary zielinski")
 
-time.sleep(1 + random.uniform(5, 10))
+time.sleep(1 + random.uniform(10, 20))
 
 print("Scrapped articles:")
 
@@ -24,10 +28,25 @@ with open('scrappedTitles.txt', 'r') as f:
         commandLine = ('scholar.py -c 1 --phrase ' + line.rstrip() + ' --citation bt')
         print(commandLine, '\n')
         os.system(commandLine)
-        time.sleep(1 + random.uniform(5, 10)) 
+        time.sleep(1 + random.uniform(10, 20)) 
         ++i
         if i >= 1:
         	break
+
+
+with open('scrappedAuthors.txt', 'r') as f:
+    for line in f:
+        scientistsGraph.add_edge("cezary zielinski", line.rstrip())
+
+
+
+#print(nx.find_cliques(scientistsGraph)) #not implemented for multi directed graph
+
+
+
+
+
+
 
 
 #lines = [line.rstrip('\n') for line in open('filename')]

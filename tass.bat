@@ -12,12 +12,12 @@
 
 
 
-::scholar.py --citations-only -c 1 --author "cezary zielinski" :: retrive the list of articles that cites the first article
+scholar.py --citations-only -c 1 --author "cezary zielinski" :: retrive the list of articles that cites the first article
 
 pause
 
 :: for each phrase == title
-scholar.py -c 1 --phrase "Robot control system design exemplified by multi-camera visual servoing" --citation bt
+::scholar.py -c 1 --phrase "Robot control system design exemplified by multi-camera visual servoing" --citation bt
 
 
 pause

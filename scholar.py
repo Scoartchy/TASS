@@ -1,3 +1,5 @@
+#This is modified code from the https://github.com/ckreibich/scholar.py
+
 #! /usr/bin/env python
 """
 This module provides classes for querying Google Scholar and parsing

@@ -167,6 +167,7 @@ import re
 import sys
 import warnings
 import re
+import parserr
 
 try:
     # Try importing for Python 3
@@ -1189,7 +1190,7 @@ def citation_export(querier):
     articles = querier.articles
     for art in articles:
         print(str(art.as_citation()))
-        patternAuthor = r"author={(.*?)}"
+        patternAuthor = parserr.GiveAuthors(art)   #r"author={(.*?)}"
         result = re.findall(patternAuthor, str(art.as_citation()), flags=0) #authors, need change to regex
         print(result)
         file.write(result[0])

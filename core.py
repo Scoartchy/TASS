@@ -30,7 +30,7 @@ with open('scrappedTitles.txt', 'r') as f:
         os.system(commandLine)
         time.sleep(1 + random.uniform(10, 20)) 
         ++i
-        if i >= 1:
+        if i >= 5:
         	break
 
 

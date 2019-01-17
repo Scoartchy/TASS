@@ -68,10 +68,40 @@ def BuildGraph(jsonloads):
     
     
 G = nx.Graph()
-#G.add_node(a["quotingperson"])
+
 
 BuildGraph (toBuild1)
 BuildGraph (toBuild2)
 BuildGraph (toBuild3)
 
+print ("Graf")
 nx.draw(G,pos=nx.spring_layout(G))
+
+MaxCliques = nx.find_cliques(G)
+print ("Maksymalne kliki to: ")
+print(list(MaxCliques))
+
+print ("Maksymalna klika")
+cliq=nx.make_max_clique_graph(G)
+nx.draw(cliq,pos=nx.spring_layout(cliq))
+ 
+print ("Dwudzielny wykres klikowy?")
+bipart=nx.make_clique_bipartite(G)
+nx.draw(bipart,pos=nx.spring_layout(bipart)) 
+
+NumOfCliqes=nx.graph_clique_number(G)
+print ("Liczba klik")
+print (NumOfCliqes)
+
+MaxNumOfCliqes=nx.graph_number_of_cliques(G)
+print ("Liczba maksymalnych klik")
+print (MaxNumOfCliqes)
+
+node_clique_number=nx.node_clique_number(G)
+print ("node_clique_number")
+print (node_clique_number)
+
+number_of_cliques=nx.number_of_cliques(G)
+print ("number of maximal cliques for each node.")
+print (number_of_cliques)
+

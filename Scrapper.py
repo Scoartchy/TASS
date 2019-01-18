@@ -7,7 +7,6 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import WebDriverException
 import time
 import hashlib
-from couchdb import *
 import random
 
 # Firefox driver loading
@@ -21,10 +20,10 @@ scientistHash = int(hashlib.sha1(scientistName).hexdigest(), 16) % (10 ** 8)
 scientists = [(scientistHash, scientistName, set())]
 
 # Constats
-maxNumberOfScientistsToSearch = 5
-maximumNumberOfPublicationsBySingleScientist = 5
-maximumNumberOfCitingPublications = 5
-maximumNumberOfAuthorsOfSinglePublication = 5
+maxNumberOfScientistsToSearch = 2
+maximumNumberOfPublicationsBySingleScientist = 2
+maximumNumberOfCitingPublications = 2
+maximumNumberOfAuthorsOfSinglePublication = 2
 
 baseTimeSleep = 2
 
@@ -136,11 +135,4 @@ for scientist in scientists:
     print("Scientist ", scientist[1], " who is quoted by:", scientist[2])
 
 # Create the CouchDB database 
-#try:
-#	db = server.create('scientists')
-#except:
-#	del server['scientists']
-#	db = server.create('scientists')
-
-# Add data to the database 
 

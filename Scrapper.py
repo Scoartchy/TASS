@@ -8,10 +8,12 @@ from selenium.common.exceptions import WebDriverException
 import time
 import hashlib
 import random
+from DatabaseManager import *
 
 # Firefox driver loading
-#driver = webdriver.Firefox(executable_path=r'C:\Users\Jakub\Downloads\geckodriver-v0.23.0-win64\geckodriver.exe')
-driver = webdriver.Firefox(executable_path=r'D:\Pobrane z Google Chrome\geckodriver-v0.23.0-win64\geckodriver.exe')
+#driver = webdriver.Firefox(executable_path=r'C:\Users\Jakub\Downloads\geckodriver-v0.23.0-win64\geckodriver.exe') # Praca
+#driver = webdriver.Firefox(executable_path=r'D:\Pobrane z Google Chrome\geckodriver-v0.23.0-win64\geckodriver.exe') # Dom (PC)
+driver = webdriver.Firefox(executable_path=r'C:\Users\Jakub\Downloads\geckodriver.exe') # Dom (Laptop)
 
 #The author from whom we start extracting information from Google Scholar
 inputScientist = "Cezary Zielinski"
@@ -20,10 +22,10 @@ scientistHash = int(hashlib.sha1(scientistName).hexdigest(), 16) % (10 ** 8)
 scientists = [(scientistHash, scientistName, set())]
 
 # Constats
-maxNumberOfScientistsToSearch = 2
-maximumNumberOfPublicationsBySingleScientist = 2
-maximumNumberOfCitingPublications = 2
-maximumNumberOfAuthorsOfSinglePublication = 2
+maxNumberOfScientistsToSearch = 10
+maximumNumberOfPublicationsBySingleScientist = 10
+maximumNumberOfCitingPublications = 10
+maximumNumberOfAuthorsOfSinglePublication = 5
 
 baseTimeSleep = 2
 
@@ -135,4 +137,5 @@ for scientist in scientists:
     print("Scientist ", scientist[1], " who is quoted by:", scientist[2])
 
 # Create the CouchDB database 
+CreateCouchDBDatabase(scientists)
 

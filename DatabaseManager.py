@@ -1,31 +1,47 @@
 import couchdb
+import json
 
-#http_proxy=http://localhost:5984
+class Object:
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, 
+            sort_keys=True, indent=4)
 
-#set http_proxy=http://127.0.0.1:5984
-
-def CreateCouchDBDatabase():
+def CreateCouchDBDatabase(scientists):
     
-    user = "admin"
-    password = "admin"
-    couchServer = couchdb.Server("http://%s:%s@couchdb:5984/" % (user, password))
+    print("-----------------------------------------------------------------------------------------------")
+    print("Database works.")
+    print("-----------------------------------------------------------------------------------------------")
 
-    dbname = 'Scientists'   
+    couchServer = couchdb.Server("http://localhost:5984")
+
+    dbname = 'scientists'
 
     if dbname in couchServer:
         db = couchServer [dbname]
     else:
         db = couchServer.create(dbname)
+
+    for scientist in scientists:
+        s = Object()
+        s.Author = scientist[1].decode('UTF8')
+
+        quoters = []
+        for q in scientist[2]:
+            decodedQ = q.decode('UTF8')
+            quoters.append(decodedQ)
         
-    scientistsList = [
-        { "Author": "Isaack Newton", "Quoters": ["Alber Einstein", "Stephen Hawking", "Nikola Tesla"]},
-        { "Author": "James Clerk Maxwell", "Quoters": ["Max Planck", "Werner Heisenberg", "Richard Feynman"]},
-    ]
+        s.Quoters = quoters
 
-    s = db.save(scientistsList)
-
-    print(s)
+        stringScientist = s.toJSON()
+        print(stringScientist)
+        jsonScientist = json.loads(stringScientist)
+        db.save(jsonScientist)
 
     return
 
-CreateCouchDBDatabase()
+#inputScientist = "Nathan1 Drake"
+#scientistName = inputScientist #.encode('UTF8')
+#scientistHash = 11111
+#scientists = [(scientistHash, scientistName, {"Albert Einstein", "Max Planc"})]
+
+#CreateCouchDBDatabase(scientists)

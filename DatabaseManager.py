@@ -39,9 +39,10 @@ def CreateCouchDBDatabase(scientists):
 
     return
 
-#inputScientist = "Nathan1 Drake"
+# TEST DATA
+#inputScientist = "Isaac Newton"
 #scientistName = inputScientist #.encode('UTF8')
 #scientistHash = 11111
-#scientists = [(scientistHash, scientistName, {"Albert Einstein", "Max Planc"})]
+#scientists = [(scientistHash, scientistName, {"Albert Einstein", "Max Planck"})]
 
 #CreateCouchDBDatabase(scientists)

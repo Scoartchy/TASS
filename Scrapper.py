@@ -32,10 +32,10 @@ scientistHash = int(hashlib.sha1(scientistName).hexdigest(), 16) % (10 ** 8)
 scientists = [(scientistHash, scientistName, set())]
 
 # Constats
-maxNumberOfScientistsToSearch = 2
-maximumNumberOfPublicationsBySingleScientist = 2
-maximumNumberOfCitingPublications = 2
-maximumNumberOfAuthorsOfSinglePublication = 2
+maxNumberOfScientistsToSearch = 100
+maximumNumberOfPublicationsBySingleScientist = 20
+maximumNumberOfCitingPublications = 10
+maximumNumberOfAuthorsOfSinglePublication = 3
 
 baseTimeSleep = 2
 
@@ -57,7 +57,7 @@ for scientistNumber in range(0, maxNumberOfScientistsToSearch):
 
     enter.send_keys(inputToGoogleScholar.decode('UTF8'))
     enter.submit()
-    time.sleep(baseTimeSleep + random.uniform(0, 2))
+    time.sleep(baseTimeSleep + random.uniform(0, 0.5))
 
     print("His works")
     
@@ -66,7 +66,7 @@ for scientistNumber in range(0, maxNumberOfScientistsToSearch):
         try:
             enter = driver.find_element_by_xpath('/html/body/div/div[11]/div[2]/div[2]/div[2]/div[1]/table/tbody/tr/td[2]/h4/a')
             enter.click()
-            time.sleep(baseTimeSleep + random.uniform(0, 2))
+            time.sleep(baseTimeSleep + random.uniform(0, 0.5))
             condition = True
         except NoSuchElementException:
             time.sleep(60)
@@ -77,7 +77,7 @@ for scientistNumber in range(0, maxNumberOfScientistsToSearch):
         s = "tr.gsc_a_tr:nth-child(" + str(i) + ") > td:nth-child(2) > a:nth-child(1)"
         enter = driver.find_element_by_css_selector(s)
         enter.click()
-        time.sleep(baseTimeSleep + random.uniform(0, 2))  
+        time.sleep(baseTimeSleep + random.uniform(0, 0.5))  
         
         #Max 5 authors of one book or publication
         for j in range(1, maximumNumberOfCitingPublications): 
@@ -120,22 +120,22 @@ for scientistNumber in range(0, maxNumberOfScientistsToSearch):
                     newScientistTuple = (scientistHash, scientistName, scientistSet)
                     scientists[scientistNumber] = newScientistTuple
 
-                    print("Updated tuple ", scientistNumber, " ", scientists[i], ", added: ", scientistName, " to set.")
+                    print("Updated tuple ", scientistNumber, " ", scientists[scientistNumber], ", added: ", quoterScientistTuple, " to set.")
 
                     #scientistsTuple = scientist[i]
                     #scientistsSet = scientistTuple[2]
                     #scientistsSet.Add(author.text)
 
-                    time.sleep(baseTimeSleep + random.uniform(0, 2))
+                    time.sleep(baseTimeSleep + random.uniform(0, 0.5))
                     driver.back()
-                    time.sleep(baseTimeSleep + random.uniform(0, 2))
+                    time.sleep(baseTimeSleep + random.uniform(0, 0.5))
                 except (NoSuchElementException, WebDriverException) as error:
-                    time.sleep(baseTimeSleep + random.uniform(0, 2))
+                    time.sleep(random.uniform(0, 0.1))
 
     #Return to previous page    
-        time.sleep(baseTimeSleep + random.uniform(0, 2))
+        time.sleep(baseTimeSleep + random.uniform(0, 0.5))
         driver.back()
-        time.sleep(baseTimeSleep + random.uniform(0, 2))
+        time.sleep(baseTimeSleep + random.uniform(0, 0.5))
 
     
     scientist = scientists[scientistNumber]

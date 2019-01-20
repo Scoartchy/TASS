@@ -39,8 +39,8 @@ def BuildGraph(jsonIN):
            for x in jsonloads["Quoters"]:
                for y in jsonloads["Author"]:
                    G.add_edge(y, x)
-        
-        
+
+
     elif type(jsonloads["Author"]) == str:
         
         if type(jsonloads["Quoters"]) == str:             #one author, one citation
@@ -49,50 +49,50 @@ def BuildGraph(jsonIN):
         elif type(jsonloads["Quoters"]) == list:          #one author, several citation
             for x in jsonloads["Quoters"]:
                 G.add_edges_from([(jsonloads["Author"], x)])
-                
+
 
 G = nx.Graph()
 
 couchServer = couchdb.Server("http://localhost:5984")
 idtable=[]
-dbname = 'scientists'
+dbname = 'scientistssimr'
 db = couchServer[dbname]
 
 for docid in db.view('_all_docs'):
     
     i = docid['id']
     jsonOUT = db[i]
-    print(jsonOUT)
-    BuildGraph(jsonOUT)
-    
+#    print(jsonOUT)
+    BuildGraph(jsonOUT)     #add nodes and edges
+print (db.view)    
 
-nx.draw(G,pos=nx.spring_layout(G))
-
-
-MaxCliques = nx.find_cliques(G)
-print ("Maksymalne kliki to: ")
-print(list(MaxCliques))
-
-print ("Maksymalna klika")
-cliq=nx.make_max_clique_graph(G)
-nx.draw(cliq,pos=nx.spring_layout(cliq))
-# 
-print ("Dwudzielny wykres klikowy?")
-bipart=nx.make_clique_bipartite(G)
-nx.draw(bipart,pos=nx.spring_layout(bipart)) 
-
-NumOfCliqes=nx.graph_clique_number(G)
-print ("Liczba klik")
-print (NumOfCliqes)
-
-MaxNumOfCliqes=nx.graph_number_of_cliques(G)
-print ("Liczba maksymalnych klik")
-print (MaxNumOfCliqes)
-
-node_clique_number=nx.node_clique_number(G)
-print ("node_clique_number")
-print (node_clique_number)
-
-number_of_cliques=nx.number_of_cliques(G)
-print ("number of maximal cliques for each node.")
-print (number_of_cliques)
+#nx.draw(G,pos=nx.spring_layout(G))
+##
+##
+#MaxCliques = nx.find_cliques(G)
+#print ("All maximal cliques: ")
+#print(list(MaxCliques))
+##
+##print ("Maximal clique graph")
+##cliq=nx.make_max_clique_graph(G)
+##nx.draw(cliq,pos=nx.spring_layout(cliq))
+### 
+##print ("Dwudzielny wykres klikowy?")
+##bipart=nx.make_clique_bipartite(G)
+##nx.draw(bipart,pos=nx.spring_layout(bipart)) 
+#
+#NumOfCliqes=nx.graph_clique_number(G)
+#print ("Clique number of the graph : ")
+#print (NumOfCliqes)
+#
+#MaxNumOfCliqes=nx.graph_number_of_cliques(G)
+#print (" Number of maximal cliques in the graph: ")
+#print (MaxNumOfCliqes)
+#
+#node_clique_number=nx.node_clique_number(G)
+#print ("Size of the largest maximal clique containing each given node")
+#print (node_clique_number)
+#
+#number_of_cliques=nx.number_of_cliques(G)
+#print ("Number of maximal cliques for each node.")
+#print (number_of_cliques)

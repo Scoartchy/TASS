@@ -1,0 +1,363 @@
+id"fa0ce4e38f6438dd8ebcd6980c0208d5"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c0208d5",
+ "key": "fa0ce4e38f6438dd8ebcd6980c0208d5",
+ "value": {
+  "rev": "2-9caa18034d45074f75108ee54e808c91"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c0208d5",
+  "_rev": "2-9caa18034d45074f75108ee54e808c91",
+  "Author": "Yuhua Chang",
+  "Quoters": [
+   "Fengchun Sun ???",
+   "Antoni Szumanowski",
+   "Fellipe Saldanha Garcia",
+   "HE Hongwen ???",
+   "Wang Ching-Chia",
+   "Piotr Piorkowski",
+   "Arkadiusz Hajduga",
+   "Tomasz Rudnicki",
+   "Divakar B.P",
+   "Enrique Romero-Cadaval",
+   "Lei Zhang",
+   "Zhiyin Liu",
+   "Artur Kopczyñski",
+   "Andre Augusto Ferreira",
+   "Rui Xiong (??)",
+   "Seyed Mohammad Rezvanizaniani",
+   "Jay Lee",
+   "Gualous",
+   "David Dorrell",
+   "Przemys³aw Szulim",
+   "Rui Xiong",
+   "Mamadou Bailo CAMARA",
+   "Cheng KW Eric"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c020d63"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c020d63",
+ "key": "fa0ce4e38f6438dd8ebcd6980c020d63",
+ "value": {
+  "rev": "1-cd27064508f9cca401acb3d75494aac2"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c020d63",
+  "_rev": "1-cd27064508f9cca401acb3d75494aac2",
+  "Author": "Mamadou Bailo CAMARA",
+  "Quoters": [
+   "Juan de Santiago",
+   "Eduardo Galván",
+   "Adel Merabet",
+   "M A Hannan",
+   "Hussein Ibrahim, Ph.D",
+   "Farzam Nejabatkhah",
+   "Gualous",
+   "Khandker Tawfique Ahmed",
+   "Yunwei (Ryan) Li",
+   "Azah Mohamed",
+   "Frédéric Gustin",
+   "Mamadou Bailo CAMARA",
+   "Srdjan Lukic",
+   "Farid Arafat Azidin",
+   "Sergio Vazquez"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c02270b"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c02270b",
+ "key": "fa0ce4e38f6438dd8ebcd6980c02270b",
+ "value": {
+  "rev": "3-70b03477c36db4afa702ff8423285c61"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c02270b",
+  "_rev": "3-70b03477c36db4afa702ff8423285c61",
+  "Author": "Piotr Piorkowski",
+  "Quoters": [
+   "Tomasz Rudnicki",
+   "Rafa³ Setlak",
+   "Artur Kopczyñski",
+   "Enrique Romero-Cadaval",
+   "Antoni Szumanowski",
+   "Andre Augusto Ferreira",
+   "Adrian Chmielewski",
+   "Fellipe Saldanha Garcia",
+   "Pawe³ Roszczyk"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c0227a1"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c0227a1",
+ "key": "fa0ce4e38f6438dd8ebcd6980c0227a1",
+ "value": {
+  "rev": "2-f8ecf66e393b2979f1d41dc918343a5e"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c0227a1",
+  "_rev": "2-f8ecf66e393b2979f1d41dc918343a5e",
+  "Author": "Tomasz Rudnicki",
+  "Quoters": [
+   "Tomasz Rudnicki",
+   "Antoni Szumanowski",
+   "Arkadiusz Denisiewicz",
+   "El¿bieta Szmigiera",
+   "Wojciech Jarzyna",
+   "Leszek Jarzebowicz",
+   "£ukasz Knypiñski",
+   "Piotr Piorkowski",
+   "Pawe³ Roszczyk"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c024c15"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c024c15",
+ "key": "fa0ce4e38f6438dd8ebcd6980c024c15",
+ "value": {
+  "rev": "1-9208a63b6fe7a40b9d22b5fe72d9aa09"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c024c15",
+  "_rev": "1-9208a63b6fe7a40b9d22b5fe72d9aa09",
+  "Author": "Fellipe Saldanha Garcia",
+  "Quoters": [
+   "Grace S. Deaecto",
+   "Michael Lemmon",
+   "Qiugang Lu",
+   "Ebrahim Babaei",
+   "Liming Zhang",
+   "Fernando Lessa Tofoli",
+   "Alon Kuperman",
+   "Farzad Mohammadzadeh Shahir",
+   "Emilia Fridman",
+   "Laurentiu Hetel",
+   "Ilan Aharon",
+   "Zhao Wang"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c0289fd"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c0289fd",
+ "key": "fa0ce4e38f6438dd8ebcd6980c0289fd",
+ "value": {
+  "rev": "1-c56dbcbeccbbc24b5ff21fa763f4c1d0"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c0289fd",
+  "_rev": "1-c56dbcbeccbbc24b5ff21fa763f4c1d0",
+  "Author": "Andre Augusto Ferreira",
+  "Quoters": [
+   "Andrea Sartore-Bianchi",
+   "bruno vincenzi",
+   "Cervantes A",
+   "Guido Kroemer",
+   "daniele santini",
+   "C.C.Chan (Ching Chuen Chan)",
+   "Salvatore Siena",
+   "Ji Luo",
+   "Lewis Cantley"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c0291dd"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c0291dd",
+ "key": "fa0ce4e38f6438dd8ebcd6980c0291dd",
+ "value": {
+  "rev": "1-56a92e8b1f9740713efdef5b4ea33d89"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c0291dd",
+  "_rev": "1-56a92e8b1f9740713efdef5b4ea33d89",
+  "Author": "Enrique Romero-Cadaval",
+  "Quoters": [
+   "Fateh Krim",
+   "Dmitri Vinnikov",
+   "Abdelfatah KOLLI",
+   "Zidong Wang",
+   "Steven Liu",
+   "Haoze Luo",
+   "Michael Schimpe",
+   "Pedro Rodriguez",
+   "M.V.Aware",
+   "Jose I. Leon",
+   "Dr. Holger Hesse",
+   "Yunjie Gu",
+   "Andreas Jossen",
+   "Samir Kouro",
+   "Remus Teodorescu",
+   "Wuhua Li",
+   "Yunlong Shang",
+   "Arnaud Gaillard",
+   "Chunting Chris Mi",
+   "Dr. Hocine Belmili,"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c0293ea"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c0293ea",
+ "key": "fa0ce4e38f6438dd8ebcd6980c0293ea",
+ "value": {
+  "rev": "2-34d600676f64b4464fea549df79be332"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c0293ea",
+  "_rev": "2-34d600676f64b4464fea549df79be332",
+  "Author": "Zhiyin Liu",
+  "Quoters": [
+   "Zhiyin Liu",
+   "Rui Xiong",
+   "Pawe³ Krawczyk",
+   "Yuhua Chang",
+   "Suleiman Sharkh",
+   "Antoni Szumanowski",
+   "Piotr Piorkowski"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c02965f"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c02965f",
+ "key": "fa0ce4e38f6438dd8ebcd6980c02965f",
+ "value": {
+  "rev": "1-a288e806d6acfdb2fd979e62360c373c"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c02965f",
+  "_rev": "1-a288e806d6acfdb2fd979e62360c373c",
+  "Author": "Artur Kopczyñski",
+  "Quoters": [
+   "Artur Kopczyñski",
+   "Piotr Piorkowski",
+   "Pawe³ Krawczyk",
+   "Adrian Chmielewski",
+   "Zhiyin Liu"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c02ad51"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c02ad51",
+ "key": "fa0ce4e38f6438dd8ebcd6980c02ad51",
+ "value": {
+  "rev": "1-2a1a4dc66800593fa2af59ba5b52363b"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c02ad51",
+  "_rev": "1-2a1a4dc66800593fa2af59ba5b52363b",
+  "Author": "Adrian Chmielewski",
+  "Quoters": [
+   "Kamil Lubikowski",
+   "Adrian Chmielewski"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c02b584"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c02b584",
+ "key": "fa0ce4e38f6438dd8ebcd6980c02b584",
+ "value": {
+  "rev": "1-9f40efba4bc3afa05bc575579cab04ac"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c02b584",
+  "_rev": "1-9f40efba4bc3afa05bc575579cab04ac",
+  "Author": "Piotr Piorkowski",
+  "Quoters": [
+   "Enrique Romero-Cadaval",
+   "Andre Augusto Ferreira",
+   "Fellipe Saldanha Garcia",
+   "Tomasz Rudnicki",
+   "Rafa³ Setlak"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c02d304"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c02d304",
+ "key": "fa0ce4e38f6438dd8ebcd6980c02d304",
+ "value": {
+  "rev": "2-3c61574db410278dc95c42b1ec21f36f"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c02d304",
+  "_rev": "2-3c61574db410278dc95c42b1ec21f36f",
+  "Author": "Pawel Krawczyk",
+  "Quoters": [
+   "Pawe³ Krawczyk",
+   "Adrian Chmielewski",
+   "Piotr Piorkowski",
+   "Jêdrzej M¹czak"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c0336d0"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c0336d0",
+ "key": "fa0ce4e38f6438dd8ebcd6980c0336d0",
+ "value": {
+  "rev": "1-daca544e7587332b5f14085eae52c8f3"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c0336d0",
+  "_rev": "1-daca544e7587332b5f14085eae52c8f3",
+  "Author": "Kamil Lubikowski",
+  "Quoters": [
+   "Kamil Lubikowski",
+   "Adrian Chmielewski"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c03784f"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c03784f",
+ "key": "fa0ce4e38f6438dd8ebcd6980c03784f",
+ "value": {
+  "rev": "1-aa657807eb974c0b8f85242576efe1a7"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c03784f",
+  "_rev": "1-aa657807eb974c0b8f85242576efe1a7",
+  "Author": "Jêdrzej M¹czak",
+  "Quoters": [
+   "Burdzik Rafa³",
+   "Adam Galezia",
+   "Meir Shillor",
+   "Adrian Chmielewski"
+  ]
+ }
+}

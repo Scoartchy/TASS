@@ -1,0 +1,555 @@
+id"9bc0e85ba5caac27c819702d0a013272"
+
+{
+ "id": "9bc0e85ba5caac27c819702d0a013272",
+ "key": "9bc0e85ba5caac27c819702d0a013272",
+ "value": {
+  "rev": "1-39bbc63ab506961990591bafadb1a782"
+ },
+ "doc": {
+  "_id": "9bc0e85ba5caac27c819702d0a013272",
+  "_rev": "1-39bbc63ab506961990591bafadb1a782",
+  "Author": "Cezary Zielinski",
+  "Quoters": [
+   "Waldemar Buchwald",
+   "Antonio Bicchi",
+   "Warren Dixon",
+   "Jaros³aw Lira",
+   "Luigi Rizzo",
+   "Ian Walker",
+   "Artur Adamczak",
+   "Tomasz Kornuta",
+   "Darren M. Dawson",
+   "W³odzimierz Kasprzak",
+   "Cezary Zielinski",
+   "Tomasz Winiarski"
+  ]
+ }
+}
+
+id"9bc0e85ba5caac27c819702d0a0133a9"
+
+{
+ "id": "9bc0e85ba5caac27c819702d0a0133a9",
+ "key": "9bc0e85ba5caac27c819702d0a0133a9",
+ "value": {
+  "rev": "1-81c1b5ecf825cb6dcfc6f5ec4ab0aae9"
+ },
+ "doc": {
+  "_id": "9bc0e85ba5caac27c819702d0a0133a9",
+  "_rev": "1-81c1b5ecf825cb6dcfc6f5ec4ab0aae9",
+  "Author": "Tomasz Kornuta",
+  "Quoters": [
+   "Dawid Seredyñski",
+   "Artur Wilkowski",
+   "Tomasz Winiarski",
+   "Maciej Stefañczyk",
+   "Konrad Banachowicz",
+   "Mariusz Janiak",
+   "Julian Allwood",
+   "Maksym Figat",
+   "Adam T. Clare",
+   "Jan Figat",
+   "Tomasz Kornuta",
+   "Miroslaw Bober",
+   "M. Hassaballah",
+   "Cezary Zielinski",
+   "W³odzimierz Kasprzak"
+  ]
+ }
+}
+
+id"9bc0e85ba5caac27c819702d0a015a87"
+
+{
+ "id": "9bc0e85ba5caac27c819702d0a015a87",
+ "key": "9bc0e85ba5caac27c819702d0a015a87",
+ "value": {
+  "rev": "1-8b968e365651217ebd810d3cc57c85bc"
+ },
+ "doc": {
+  "_id": "9bc0e85ba5caac27c819702d0a015a87",
+  "_rev": "1-8b968e365651217ebd810d3cc57c85bc",
+  "Author": "W³odzimierz Kasprzak",
+  "Quoters": [
+   "Juha Karhunen",
+   "Danny JJ Wang",
+   "John Detre",
+   "Andrzej Cichocki",
+   "Vince D. Calhoun",
+   "A.Mansour",
+   "Tulay Adali",
+   "Jagath C Rajapakse",
+   "David Schretlen",
+   "Simone Fiori",
+   "Amari S*",
+   "Chen Tianping",
+   "Noboru Murata",
+   "Ze Wang",
+   "Godfrey Pearlson",
+   "W³odzimierz Kasprzak"
+  ]
+ }
+}
+
+id"9bc0e85ba5caac27c819702d0a01690b"
+
+{
+ "id": "9bc0e85ba5caac27c819702d0a01690b",
+ "key": "9bc0e85ba5caac27c819702d0a01690b",
+ "value": {
+  "rev": "1-27a957224eda41dc69f1adbffeb0bd6b"
+ },
+ "doc": {
+  "_id": "9bc0e85ba5caac27c819702d0a01690b",
+  "_rev": "1-27a957224eda41dc69f1adbffeb0bd6b",
+  "Author": "Tomasz Winiarski",
+  "Quoters": [
+   "Dawid Seredyñski",
+   "Mariusz Janiak",
+   "W³odzimierz Kasprzak",
+   "Marcin Szlenk",
+   "Maksym Figat",
+   "Adam T. Clare",
+   "Tomasz Kornuta",
+   "Julian Allwood",
+   "Cezary Zielinski",
+   "Tomasz Winiarski"
+  ]
+ }
+}
+
+id"9bc0e85ba5caac27c819702d0a01ac0a"
+
+{
+ "id": "9bc0e85ba5caac27c819702d0a01ac0a",
+ "key": "9bc0e85ba5caac27c819702d0a01ac0a",
+ "value": {
+  "rev": "1-b165ddeeac8c641c4294c8c505d48e3e"
+ },
+ "doc": {
+  "_id": "9bc0e85ba5caac27c819702d0a01ac0a",
+  "_rev": "1-b165ddeeac8c641c4294c8c505d48e3e",
+  "Author": "Darren M. Dawson",
+  "Quoters": [
+   "Rafael Fierro",
+   "Chaouki Abdallah",
+   "Abhijit Das",
+   "Hongwei Zhang",
+   "Zhihua Qu",
+   "Kamesh Subbarao",
+   "F.L. Lewis",
+   "Li-Qun Chen",
+   "Valery Pilipchuk"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c000d0e"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c000d0e",
+ "key": "fa0ce4e38f6438dd8ebcd6980c000d0e",
+ "value": {
+  "rev": "1-5d70ebe3075e124032644fde9c046b16"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c000d0e",
+  "_rev": "1-5d70ebe3075e124032644fde9c046b16",
+  "Author": "Wlodzimierz Ogryczak",
+  "Quoters": [
+   "Andrzej Ruszczyñski",
+   "Antonio J. Conejo",
+   "Alexander Shapiro",
+   "Margaret M Wiecek",
+   "Juan Miguel Morales González",
+   "Darinka Dentcheva",
+   "Wlodzimierz Ogryczak"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c001c94"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c001c94",
+ "key": "fa0ce4e38f6438dd8ebcd6980c001c94",
+ "value": {
+  "rev": "1-8e5cdf839c30d28a3fc66d46d85baf76"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c001c94",
+  "_rev": "1-8e5cdf839c30d28a3fc66d46d85baf76",
+  "Author": "Alexander Shapiro",
+  "Quoters": [
+   "Guillermo Sapiro",
+   "Arkadi Nemirovski",
+   "Olivier Bousquet",
+   "Guanghui (George) Lan",
+   "Darinka Dentcheva",
+   "Rodolphe JENATTON",
+   "Olivier Chapelle",
+   "Shabbir Ahmed",
+   "vapnik",
+   "Andrzej Ruszczyñski",
+   "Julien Mairal",
+   "Sayan Mukherjee",
+   "Alexander Shapiro",
+   "Anatoli Juditsky",
+   "Jean Ponce",
+   "Francis Bach"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c00384c"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c00384c",
+ "key": "fa0ce4e38f6438dd8ebcd6980c00384c",
+ "value": {
+  "rev": "1-26d0b64a95f71227779155a9a451b91d"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c00384c",
+  "_rev": "1-26d0b64a95f71227779155a9a451b91d",
+  "Author": "Ewa Niewiadomska-Szynkiewicz",
+  "Quoters": [
+   "Antonio Capone",
+   "Xiong Luo",
+   "Giuliana Carello",
+   "Massimo Vecchio",
+   "Ewa Niewiadomska-Szynkiewicz",
+   "Roberto Lopez-Valcarce",
+   "Przemys³aw Jaskó³a",
+   "Bernardetta Addis",
+   "Michael J. Hicks",
+   "Wenbing Zhao",
+   "Andrzej Sikora",
+   "Andrea Castelletti",
+   "Francesco Marcelloni",
+   "Matteo Giuliani",
+   "Luca Giovanni Gianoli"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c0062ec"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c0062ec",
+ "key": "fa0ce4e38f6438dd8ebcd6980c0062ec",
+ "value": {
+  "rev": "1-b4c1c8a7cc5439442c1e089ad180d100"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c0062ec",
+  "_rev": "1-b4c1c8a7cc5439442c1e089ad180d100",
+  "Author": "Massimo Vecchio",
+  "Quoters": [
+   "Aboul Ella Hassanien",
+   "Massimo Vecchio",
+   "Ashraf Darwish",
+   "Muddassar Farooq",
+   "Tharini C",
+   "Michael Allen",
+   "Ying Lin(??)",
+   "Henry Chung",
+   "Zhibo Pang",
+   "Roberto Lopez-Valcarce",
+   "James Brusey",
+   "Ross Wilkins",
+   "P.Vanaja Ranjan",
+   "Elena Gaura",
+   "Muhammad Saleem",
+   "Francesco Marcelloni",
+   "Gianni A. Di Caro"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c007283"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c007283",
+ "key": "fa0ce4e38f6438dd8ebcd6980c007283",
+ "value": {
+  "rev": "1-3778d45ce2c3858fa7b82767fbbf388b"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c007283",
+  "_rev": "1-3778d45ce2c3858fa7b82767fbbf388b",
+  "Author": "Roberto Lopez-Valcarce",
+  "Quoters": [
+   "Tadilo Endeshaw Bogale",
+   "Marcos Álvarez-Díaz",
+   "Gonzalo Vazquez-Vilar",
+   "Ignacio Santamaria",
+   "Amitav Mukherjee",
+   "Javier Vía",
+   "Faouzi Bellili",
+   "A. Lee Swindlehurst",
+   "Roberto Lopez-Valcarce",
+   "Symeon Chatzinotas",
+   "Sofiene Affes",
+   "David Ramírez",
+   "Shree Krishna Sharma"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c00ab0b"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c00ab0b",
+ "key": "fa0ce4e38f6438dd8ebcd6980c00ab0b",
+ "value": {
+  "rev": "1-1040ab6f571fa2ca8b5af27a2579f707"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c00ab0b",
+  "_rev": "1-1040ab6f571fa2ca8b5af27a2579f707",
+  "Author": "Andrzej Pacut",
+  "Quoters": [
+   "Daniel Ramos",
+   "Javier Ortega-Garcia",
+   "Fernando Alonso-Fernandez",
+   "Javier Galbally",
+   "David Menotti",
+   "John Tsitsiklis",
+   "Allan Pinto",
+   "Chih-hung Chang",
+   "Pedro Tome",
+   "Giovani Chiachia",
+   "Amari S*",
+   "André Anjos",
+   "Tiago de Freitas Pereira",
+   "Vincent T. Remcho",
+   "José Mario De Martino",
+   "Julian FIERREZ"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c00b238"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c00b238",
+ "key": "fa0ce4e38f6438dd8ebcd6980c00b238",
+ "value": {
+  "rev": "2-1132edbff750046cb196f4b4b22d93c4"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c00b238",
+  "_rev": "2-1132edbff750046cb196f4b4b22d93c4",
+  "Author": "Krzysztof Pieñkosz",
+  "Quoters": [
+   "elena fernandez",
+   "Somanath Tripathy",
+   "Ravindra Ahuja",
+   "Enrico Fortunato Creaco",
+   "Marco Franchini",
+   "Pascal Bouvry",
+   "Nilay Shah",
+   "James B. Orlin",
+   "Walid Klibi",
+   "Adel GUITOUNI",
+   "Sukumar Nandi",
+   "Justo Puerto",
+   "Dr. Jegadish kumar K. J.",
+   "Marcin Seredynski"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c00f42d"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c00f42d",
+ "key": "fa0ce4e38f6438dd8ebcd6980c00f42d",
+ "value": {
+  "rev": "1-c6cee2c48d9c7e26c6a6221a23cf4667"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c00f42d",
+  "_rev": "1-c6cee2c48d9c7e26c6a6221a23cf4667",
+  "Author": "Andrzej Ratkowski",
+  "Quoters": [
+   "James W. J. Xue",
+   "Young M. Lee",
+   "Xiaoxing Ma",
+   "Georg Grossmann",
+   "Ligang He",
+   "Adam Peter Chester",
+   "Stephen Jarvis",
+   "Florian Rosenberg",
+   "Jeong Yang",
+   "Klym Shumaiev",
+   "Dragan Gasevic",
+   "Sylvain Hallé",
+   "Manoj Bhat",
+   "Wei Song",
+   "Hans-Arno Jacobsen",
+   "Floris Bex",
+   "Shing-Chi Cheung"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c0101b5"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c0101b5",
+ "key": "fa0ce4e38f6438dd8ebcd6980c0101b5",
+ "value": {
+  "rev": "1-1226e001f031cab11128dcc263cc073a"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c0101b5",
+  "_rev": "1-1226e001f031cab11128dcc263cc073a",
+  "Author": "James W. J. Xue",
+  "Quoters": [
+   "Amir Kalbasi",
+   "James W. J. Xue",
+   "Matthew Leeke",
+   "Giuliano Casale",
+   "Thar Baker",
+   "Diwakar Krishnamurthy",
+   "Giuseppe Serazzi",
+   "Benfano Soewito",
+   "Fergyanto E Gunawan",
+   "Ligang He",
+   "Adam Peter Chester",
+   "Stephen Jarvis",
+   "Melki Sadekh Mansuan"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c01145e"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c01145e",
+ "key": "fa0ce4e38f6438dd8ebcd6980c01145e",
+ "value": {
+  "rev": "2-4d1e789c91a0f1596439d84185eb9702"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c01145e",
+  "_rev": "2-4d1e789c91a0f1596439d84185eb9702",
+  "Author": "Tomasz Œliwiñski",
+  "Quoters": [
+   "George Perkoulidis",
+   "Michal Pioro",
+   "Diana Roman",
+   "Meimei Xia",
+   "Piotr Faliszewski",
+   "Marianna Marra PhD",
+   "Byeong Seok Ahn",
+   "Erhan Erkut",
+   "Zeshui Xu (???)",
+   "Jerome Lang",
+   "Wlodzimierz Ogryczak",
+   "Ann Melissa Campbell",
+   "Ali Emrouznejad",
+   "Piotr Skowron",
+   "Xinwang Liu",
+   "Adam Wierzbicki"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c01b03e"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c01b03e",
+ "key": "fa0ce4e38f6438dd8ebcd6980c01b03e",
+ "value": {
+  "rev": "1-340cd09f2b44b784c90d32dbce52dbfb"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c01b03e",
+  "_rev": "1-340cd09f2b44b784c90d32dbce52dbfb",
+  "Author": "Wlodzimierz Ogryczak",
+  "Quoters": [
+   "Juan Miguel Morales González",
+   "Darinka Dentcheva",
+   "Wlodzimierz Ogryczak",
+   "Alexander Shapiro",
+   "Antonio J. Conejo",
+   "Margaret M Wiecek",
+   "Andrzej Ruszczyñski"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c01db2f"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c01db2f",
+ "key": "fa0ce4e38f6438dd8ebcd6980c01db2f",
+ "value": {
+  "rev": "1-ea185f93a6e5b672f9773e5a91676ae2"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c01db2f",
+  "_rev": "1-ea185f93a6e5b672f9773e5a91676ae2",
+  "Author": "Marcin Szlenk",
+  "Quoters": [
+   "Monique Snoeck",
+   "Cezary Zielinski",
+   "Dolors Costal",
+   "Gayane Sedrakyan",
+   "Maksym Figat",
+   "Giancarlo Guizzardi",
+   "Athanassios M. Kintsakis",
+   "Maciej Stefañczyk",
+   "Marcin Szlenk",
+   "Azzam Maraee",
+   "Tomasz Kornuta",
+   "Stephan Poelmans",
+   "Jordi Cabot",
+   "Konstantinos Panayiotou",
+   "Emmanouil Tsardoulias",
+   "Licinio Roque"
+  ]
+ }
+}
+
+id"fa0ce4e38f6438dd8ebcd6980c01e9c7"
+
+{
+ "id": "fa0ce4e38f6438dd8ebcd6980c01e9c7",
+ "key": "fa0ce4e38f6438dd8ebcd6980c01e9c7",
+ "value": {
+  "rev": "1-83cdcb5af13d54f16bf722ab32969592"
+ },
+ "doc": {
+  "_id": "fa0ce4e38f6438dd8ebcd6980c01e9c7",
+  "_rev": "1-83cdcb5af13d54f16bf722ab32969592",
+  "Author": "Licinio Roque",
+  "Quoters": [
+   "M.J. Land",
+   "Stylianos (Stelios) Asteriadis",
+   "jean-marc labat",
+   "Emad Abu-Shanab",
+   "Eduardo Velloso",
+   "Flavio Soares Correa da Silva",
+   "Amaia Mendez Zorrilla; A. Méndez; A. Mendez; Amaia Méndez Zorrilla; AM Zorrilla",
+   "Matthias Thurer",
+   "Cristiano Maciel",
+   "Alex Duffy",
+   "Georgios N. Yannakakis",
+   "Pradeepa Thomas",
+   "Cristóvao Silva",
+   "L. C. Hendry",
+   "Robert Ian Whitfield",
+   "Marcus Carter",
+   "amel yessad",
+   "Chris Martens",
+   "Mark Stevenson",
+   "Shaofeng Liu",
+   "Noor Shaker"
+  ]
+ }
+}

@@ -2,7 +2,7 @@
 import json
 import networkx as nx
 import couchdb
-
+#MultiGraph.to_undirected(as_view=False)
 
 def BuildGraph(jsonIN):
 
@@ -51,7 +51,7 @@ def BuildGraph(jsonIN):
                 G.add_edges_from([(jsonloads["Author"], x)])
 
 
-G = nx.Graph()
+G = nx.DiGraph()
 
 couchServer = couchdb.Server("http://localhost:5984")
 idtable=[]
@@ -62,37 +62,38 @@ for docid in db.view('_all_docs'):
     
     i = docid['id']
     jsonOUT = db[i]
-#    print(jsonOUT)
     BuildGraph(jsonOUT)     #add nodes and edges
-print (db.view)    
+    
 
 #nx.draw(G,pos=nx.spring_layout(G))
+H=G.to_undirected()
+nx.draw(H,pos=nx.spring_layout(H))
 ##
-##
-#MaxCliques = nx.find_cliques(G)
-#print ("All maximal cliques: ")
-#print(list(MaxCliques))
-##
-##print ("Maximal clique graph")
-##cliq=nx.make_max_clique_graph(G)
-##nx.draw(cliq,pos=nx.spring_layout(cliq))
+#
+MaxCliques = nx.find_cliques(H)
+print ("All maximal cliques: ")
+print(list(MaxCliques))
+#
+#print ("Maximal clique graph")
+#cliq=nx.make_max_clique_graph(H)
+#nx.draw(cliq,pos=nx.spring_layout(cliq))
 ### 
-##print ("Dwudzielny wykres klikowy?")
-##bipart=nx.make_clique_bipartite(G)
-##nx.draw(bipart,pos=nx.spring_layout(bipart)) 
-#
-#NumOfCliqes=nx.graph_clique_number(G)
-#print ("Clique number of the graph : ")
-#print (NumOfCliqes)
-#
-#MaxNumOfCliqes=nx.graph_number_of_cliques(G)
-#print (" Number of maximal cliques in the graph: ")
-#print (MaxNumOfCliqes)
-#
-#node_clique_number=nx.node_clique_number(G)
-#print ("Size of the largest maximal clique containing each given node")
-#print (node_clique_number)
-#
-#number_of_cliques=nx.number_of_cliques(G)
-#print ("Number of maximal cliques for each node.")
-#print (number_of_cliques)
+#print ("Bipartite clique graph")
+#bipart=nx.make_clique_bipartite(H)
+#nx.draw(bipart,pos=nx.spring_layout(bipart)) 
+
+NumOfCliqes=nx.graph_clique_number(H)
+print ("Clique number of the graph : ")
+print (NumOfCliqes)
+
+MaxNumOfCliqes=nx.graph_number_of_cliques(H)
+print (" Number of maximal cliques in the graph: ")
+print (MaxNumOfCliqes)
+
+node_clique_number=nx.node_clique_number(H)
+print ("Size of the largest maximal clique containing each given node")
+print (node_clique_number)
+
+number_of_cliques=nx.number_of_cliques(H)
+print ("Number of maximal cliques for each node.")
+print (number_of_cliques)

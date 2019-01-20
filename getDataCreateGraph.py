@@ -99,10 +99,6 @@ MaxCliques = nx.find_cliques(H)
 print ("All maximal cliques: ")
 print(list(MaxCliques))
 ##
-#print ("Maximal clique graph")
-#cliq=nx.make_max_clique_graph(H)
-#nx.draw(cliq,pos=nx.spring_layout(cliq))
-
 node_clique_number=nx.node_clique_number(H)
 print ("Size of the largest maximal clique containing each given node")
 print (node_clique_number)

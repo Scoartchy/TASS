@@ -1,3 +1,9 @@
+: Libraray instalation
+pip install selenium
+pip install couchdb
+pip install networkx
+pip install matplotlib
+
 : Parametrs
 set /A maxNumberOfScientistsToSearch = 40
 set /A maximumNumberOfPublicationsBySingleScientist = 5

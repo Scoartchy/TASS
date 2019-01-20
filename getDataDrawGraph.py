@@ -51,7 +51,7 @@ def BuildGraph(jsonIN):
                 G.add_edges_from([(jsonloads["Author"], x)])
 
 
-G = nx.DiGraph()
+G = nx.MultiDiGraph()
 
 couchServer = couchdb.Server("http://localhost:5984")
 idtable=[]
@@ -67,7 +67,7 @@ for docid in db.view('_all_docs'):
 
 #nx.draw(G,pos=nx.spring_layout(G))
 H=G.to_undirected()
-nx.draw(H,pos=nx.spring_layout(H))
+#nx.draw(H,pos=nx.spring_layout(H))
 ##
 #
 MaxCliques = nx.find_cliques(H)
@@ -78,9 +78,9 @@ print(list(MaxCliques))
 #cliq=nx.make_max_clique_graph(H)
 #nx.draw(cliq,pos=nx.spring_layout(cliq))
 ### 
-#print ("Bipartite clique graph")
-#bipart=nx.make_clique_bipartite(H)
-#nx.draw(bipart,pos=nx.spring_layout(bipart)) 
+print ("Bipartite clique graph")
+bipart=nx.make_clique_bipartite(H)
+nx.draw(bipart,pos=nx.spring_layout(bipart)) 
 
 NumOfCliqes=nx.graph_clique_number(H)
 print ("Clique number of the graph : ")

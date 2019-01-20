@@ -32,8 +32,8 @@ scientistHash = int(hashlib.sha1(scientistName).hexdigest(), 16) % (10 ** 8)
 scientists = [(scientistHash, scientistName, set())]
 
 # Constats
-maxNumberOfScientistsToSearch = 100
-maximumNumberOfPublicationsBySingleScientist = 20
+maxNumberOfScientistsToSearch = 40
+maximumNumberOfPublicationsBySingleScientist = 10
 maximumNumberOfCitingPublications = 10
 maximumNumberOfAuthorsOfSinglePublication = 3
 
@@ -74,10 +74,13 @@ for scientistNumber in range(0, maxNumberOfScientistsToSearch):
     #Authors that are not linked are omitted 
     for i in range(1, maximumNumberOfPublicationsBySingleScientist): 
         #print("i: ", i)
-        s = "tr.gsc_a_tr:nth-child(" + str(i) + ") > td:nth-child(2) > a:nth-child(1)"
-        enter = driver.find_element_by_css_selector(s)
-        enter.click()
-        time.sleep(baseTimeSleep + random.uniform(0, 0.5))  
+        try:
+            s = "tr.gsc_a_tr:nth-child(" + str(i) + ") > td:nth-child(2) > a:nth-child(1)"
+            enter = driver.find_element_by_css_selector(s)
+            enter.click()
+            time.sleep(baseTimeSleep + random.uniform(0, 0.5))  
+        except (NoSuchElementException, WebDriverException) as error:
+                time.sleep(baseTimeSleep + random.uniform(0, 0.5))
         
         #Max 5 authors of one book or publication
         for j in range(1, maximumNumberOfCitingPublications): 

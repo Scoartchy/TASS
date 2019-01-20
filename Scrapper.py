@@ -16,6 +16,8 @@ maxNumberOfScientistsToSearch = 40
 maximumNumberOfPublicationsBySingleScientist = 10
 maximumNumberOfCitingPublications = 10
 maximumNumberOfAuthorsOfSinglePublication = 3
+inputScientist = "Cezary Zielinski"
+path = r'C:\Users\Jakub\Downloads\geckodriver.exe'
 
 def RunScrapper():
     #Create or init database
@@ -31,10 +33,11 @@ def RunScrapper():
     # Firefox driver loading
     #driver = webdriver.Firefox(executable_path=r'C:\Users\Jakub\Downloads\geckodriver-v0.23.0-win64\geckodriver.exe') # Praca
     #driver = webdriver.Firefox(executable_path=r'D:\Pobrane z Google Chrome\geckodriver-v0.23.0-win64\geckodriver.exe') # Dom (PC)
-    driver = webdriver.Firefox(executable_path=r'C:\Users\Jakub\Downloads\geckodriver.exe') # Dom (Laptop)
+    #driver = webdriver.Firefox(executable_path=r'C:\Users\Jakub\Downloads\geckodriver.exe') # Dom (Laptop)
+    driver = webdriver.Firefox(executable_path=path)
 
     #The author from whom we start extracting information from Google Scholar
-    inputScientist = "Cezary Zielinski"
+    
     scientistName = inputScientist.encode('UTF8')
     scientistHash = int(hashlib.sha1(scientistName).hexdigest(), 16) % (10 ** 8)
     scientists = [(scientistHash, scientistName, set())]
@@ -173,10 +176,11 @@ def RunScrapper():
     # CreateCouchDBDatabase(scientists)
 
 
-
 maxNumberOfScientistsToSearch = int(sys.argv[1])
 maximumNumberOfPublicationsBySingleScientist = int(sys.argv[2])
 maximumNumberOfCitingPublications = int(sys.argv[3])
 maximumNumberOfAuthorsOfSinglePublication = int(sys.argv[4])
+inputScientist = str(sys.argv[5])
+path = str(sys.argv[6])
 
 RunScrapper()

@@ -8,7 +8,6 @@ from selenium.common.exceptions import WebDriverException
 import time
 import hashlib
 import random
-from DatabaseManager import *
 import sys
 
 # Default constats

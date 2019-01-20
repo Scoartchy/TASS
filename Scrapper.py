@@ -130,7 +130,7 @@ for scientistNumber in range(0, maxNumberOfScientistsToSearch):
                     driver.back()
                     time.sleep(baseTimeSleep + random.uniform(0, 0.5))
                 except (NoSuchElementException, WebDriverException) as error:
-                    time.sleep(random.uniform(0, 0.1))
+                    time.sleep(baseTimeSleep + random.uniform(0, 0.5))
 
     #Return to previous page    
         time.sleep(baseTimeSleep + random.uniform(0, 0.5))

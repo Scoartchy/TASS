@@ -10,6 +10,16 @@ import hashlib
 import random
 from DatabaseManager import *
 
+#Create or init database
+couchServer = couchdb.Server("http://localhost:5984")
+
+dbname = 'scientists'
+
+if dbname in couchServer:
+    db = couchServer [dbname]
+else:
+    db = couchServer.create(dbname)
+
 # Firefox driver loading
 #driver = webdriver.Firefox(executable_path=r'C:\Users\Jakub\Downloads\geckodriver-v0.23.0-win64\geckodriver.exe') # Praca
 #driver = webdriver.Firefox(executable_path=r'D:\Pobrane z Google Chrome\geckodriver-v0.23.0-win64\geckodriver.exe') # Dom (PC)
@@ -22,9 +32,9 @@ scientistHash = int(hashlib.sha1(scientistName).hexdigest(), 16) % (10 ** 8)
 scientists = [(scientistHash, scientistName, set())]
 
 # Constats
-maxNumberOfScientistsToSearch = 10
-maximumNumberOfPublicationsBySingleScientist = 10
-maximumNumberOfCitingPublications = 10
+maxNumberOfScientistsToSearch = 5
+maximumNumberOfPublicationsBySingleScientist = 5
+maximumNumberOfCitingPublications = 5
 maximumNumberOfAuthorsOfSinglePublication = 5
 
 baseTimeSleep = 2
@@ -126,6 +136,22 @@ for scientistNumber in range(0, maxNumberOfScientistsToSearch):
         time.sleep(baseTimeSleep + random.uniform(0, 2))
         driver.back()
         time.sleep(baseTimeSleep + random.uniform(0, 2))
+
+    
+    s = Object()
+    s.Author = scientist[1].decode('UTF8')
+
+    quoters = []
+    for q in scientist[2]:
+        decodedQ = q.decode('UTF8')
+        quoters.append(decodedQ)
+        
+    s.Quoters = quoters
+
+    stringScientist = s.toJSON()
+    print(stringScientist)
+    jsonScientist = json.loads(stringScientist)
+    db.save(jsonScientist)
 
     i+=1
 

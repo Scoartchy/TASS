@@ -32,10 +32,10 @@ scientistHash = int(hashlib.sha1(scientistName).hexdigest(), 16) % (10 ** 8)
 scientists = [(scientistHash, scientistName, set())]
 
 # Constats
-maxNumberOfScientistsToSearch = 5
-maximumNumberOfPublicationsBySingleScientist = 5
-maximumNumberOfCitingPublications = 5
-maximumNumberOfAuthorsOfSinglePublication = 5
+maxNumberOfScientistsToSearch = 2
+maximumNumberOfPublicationsBySingleScientist = 2
+maximumNumberOfCitingPublications = 2
+maximumNumberOfAuthorsOfSinglePublication = 2
 
 baseTimeSleep = 2
 
@@ -138,6 +138,8 @@ for scientistNumber in range(0, maxNumberOfScientistsToSearch):
         time.sleep(baseTimeSleep + random.uniform(0, 2))
 
     
+    scientist = scientists[scientistNumber]
+
     s = Object()
     s.Author = scientist[1].decode('UTF8')
 
@@ -163,5 +165,5 @@ for scientist in scientists:
     print("Scientist ", scientist[1], " who is quoted by:", scientist[2])
 
 # Create the CouchDB database 
-CreateCouchDBDatabase(scientists)
+# CreateCouchDBDatabase(scientists)
 

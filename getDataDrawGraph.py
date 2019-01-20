@@ -66,7 +66,7 @@ for docid in db.view('_all_docs'):
     
 
 #nx.draw(G,pos=nx.spring_layout(G))
-H=G.to_undirected()
+H = G.to_undirected(reciprocal=True)
 #nx.draw(H,pos=nx.spring_layout(H))
 ##
 #

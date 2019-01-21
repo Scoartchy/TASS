@@ -9,7 +9,14 @@ import time
 import hashlib
 import random
 import sys
+import couchdb
+import json
 
+class Object:
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, 
+            sort_keys=True, indent=4)
+            
 # Default constats
 maxNumberOfScientistsToSearch = 40
 maximumNumberOfPublicationsBySingleScientist = 10
